@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Canvas Example</title>
+		<script type="text/javascript">
+	function loader ()
+		{
+			var canvas = document.getElementById('canvas');
+			var canvas1 = canvas.getContext('2d');
+			
+			//Rectangles
+			canvas1.fillStyle = "rgba(0, 0, 200, 1)";
+			canvas1.fillRect(30, 30, 75, 50);
+			
+			canvas1.fillStyle = "rgba(200,200,0,1)";
+			canvas1.fillRect(70,50,55,70);
+			
+			canvas1.fillStyle = "rgba(200,0,0,1)";
+			canvas1.fillRect(90,50,75,50);
+			
+			
+			
+		}
+	
+	</script>
+</head> 
+
+<body onLoad="loader()">
+	<h1>Canvas Example</h1>
+	<canvas id="canvas" width="600" height="500"></canvas>
+	
+
+</body>
+</html>

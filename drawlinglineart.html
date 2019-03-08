@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Canvas Drawing Line Art</title>
+	<script type="text/javascript">
+		
+		function loader(){
+			var canvas = document.getElementById('canvas');
+			var canvas1 = canvas.getContext('2d');
+			
+			//stroked triangles
+			canvas1.beginPath();
+			canvas1.strokeStyle = "rgba(200, 0, 0, 0.5)";
+			canvas1.moveTo(110, 205);
+			canvas1.lineTo(110,125);
+			canvas1.lineTo(30,205);
+			canvas1.closePath();
+			canvas1.stroke();
+			
+			canvas1.beginPath();
+			canvas1.moveTo(100, 205);
+			canvas1.lineTo(100, 125);
+			canvas1.lineTo(20, 205);
+			canvas1.closePath();
+			canvas1.stroke();
+			
+			canvas1.beginPath();
+			canvas1.moveTo(90, 205);
+			canvas1.lineTo(90, 125);
+			canvas1.lineTo(10, 205);
+			canvas1.closePath();
+			canvas1.stroke();
+		}
+	</script>
+</head>
+
+<body onLoad="loader()">
+	<h1>Canvas Drawing Line Art</h1>
+	<canvas id="canvas" width="600" height="500"></canvas>
+</body>
+</html>
